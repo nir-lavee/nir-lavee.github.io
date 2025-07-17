@@ -1,1 +1,174 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nir Lavee</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: #f9d7a0;
+                font-family: sans-serif;
+                width: 90vw;
+                max-width: 760px;
+                margin: auto;
+                text-align: justify;
+                font-size: 14pt;
+                padding: 0px;
+            }
+            h1 {
+                font-size: 24pt;
+            }
+            h2 {
+                font-size: 18pt;
+            }
+            #prof-brief {
+                position:relative;
+                text-align: left;
+            }
+            #prof-brief p {
+                line-height: 20px;
+            }
+            .prof-icon {
+                filter: grayscale(100%);
+            }
+            .sect {
+                padding-bottom: 6px;
+                border-top: 1px dashed black;
+                margin-top: 20px;
+                padding-top: 6px;
+            }
+            .sect:first-of-type {
+                border-top: 0px;
+                margin-top: 4px;
+            }
+            .paper {
+                padding-bottom: 24px;
+            }
+            .paper:last-of-type {
+/*                 padding-bottom: 16px; */
+            }
+            .paper-title {
+                margin: 0px;
+                padding: 0px;
+            }
+            .paper-authors {
+                padding: 0px;
+                margin: 0px;
+            }
+            .paper-publication {
+                color: #606060;
+            }
+            .paper-publication::before {
+                content: "[";
+            }
+            .paper-publication::after {
+                content: "]";
+            }
+            #div-pic {
+                border: 1px solid black;
+                width: 30%;
+                height: 90%;
+                position: absolute;
+                top: 16px;
+                right: 0
+            }
+            .news-date {
+                color: #606060;
+
+            }
+            .news-date::before {
+                content: "[";
+            }
+            .news-date::after {
+                content: "]:";
+            }
+            @media screen and (max-width: 760px) {
+                #div-pic {
+                    display: none !important;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="sect" id="prof-brief">
+            <h1>Nir Lavee</h1>
+            <p class="prof-item">
+                <span class="prof-icon">&#127891;</span> PhD student
+            </p>
+            <p class="prof-item">
+                <span class="prof-icon">&#127963;</span> <!--Hebrew University of Jerusalem--> CS @ HUJI
+            </p>
+            <p class="prof-item">
+                <span class="prof-icon">&#128231;</span> Dot-separated full name at mail.huji.ac.il
+            </p>
+            <p class="prof-item">
+                <span class="prof-icon">&#128196;</span> ORCID <a href="https://orcid.org/0000-0002-2241-8550">0000-0002-2241-8550</a>
+            </p>
+
+            <!--
+            <div id="div-pic" style="">
+                abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc
+            </div>
+            -->
+
+        </div>
+        <div class="sect" id="prof-desc">
+            <h2>About</h2>
+            <p>
+                I am a PhD student at the Hebrew University of Jerusalem, under the supervision of <a href="https://www.cs.huji.ac.il/~nati/">Nati Linial</a>. I have broad research interests in combinatorics and discrete algorithms. I also work as a TA for the Computability &amp; Complexity course.
+            </p>
+            <p>
+                Previously: my MSc advisor was <a href="https://www.cs.huji.ac.il/~ornak/">Orna Kupferman</a>, I completed it in 2022 (summa cum laude). Before doing research, I worked at the Israeli olympiad in informatics, where I helped coach students for the <a href="https://ioinformatics.org/">IOI</a>.
+            </p>
+        </div>
+        <div class="sect" id="news">
+            <h2>News</h2>
+            <p>
+                <span class="news-date">2025-07-11</span> Presented the pattern-counting paper at ICALP. Joint work with Gal Beniamini.
+            </p>
+            <p>
+                <span class="news-date">2025-04-21</span> Gave a talk on balanced permutations at the Hebrew University combinatorics seminar. Joint work with Gal Beniamini and Nati Linial.
+            </p>
+            <p>
+                <span class="news-date">2024-07-31</span> Gave a talk on balanced permutations at the Technion combinatorics seminar. Joint work with Gal Beniamini and Nati Linial.
+            </p>
+            <p>
+                <span class="news-date">2022-03-09</span> Received the Rector's prize for excellent students.
+            </p>
+            <p>
+                <span class="news-date">2021-10-19</span> Presented the paper on certifying DFA bounds at ATVA (remotely). Joint work with Orna Kupferman and Salomon Sickert.
+            </p>
+        </div>
+        <div class="sect" id="papers">
+            <h2>Papers</h2>
+            <div class="paper">
+                <p class="paper-title">
+                    <a href="https://arxiv.org/abs/2407.04971">Counting Permutation Patterns with Multidimensional Trees</a>
+                <span class="paper-publication">ICALP 2025</span>
+                </p>
+                <p class="paper-authors">
+                    Gal Beniamini, Nir Lavee
+                </p>
+            </div>
+            <div class="paper">
+                <p class="paper-title">
+                    <a href="https://arxiv.org/abs/2306.16954">How Balanced Can Permutations Be?</a>
+                <span class="paper-publication">Combinatorica 2025</span>
+                </p>
+                <p class="paper-authors">
+                    Gal Beniamini, Nir Lavee, Nati Linial
+                </p>
+            </div>
+            <div class="paper">
+                <p class="paper-title">
+                    <a href="https://arxiv.org/abs/2107.01566v1">Certifying DFA Bounds for Recognition and Separation</a>
+                <span class="paper-publication">ATVA 2021</span>
+                </p>
+                <p class="paper-authors">
+                    Orna Kupferman, Nir Lavee, Salomon Sickert
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
